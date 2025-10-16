@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- To jest komentarz, przeglądarka go ignoruje -->
+
+<!-- Wszystko, co zawiera się wewnątrz znacznika "html" będzie interpretowane przez przeglądarkę jako strona do wyświetlenia -->
+<!-- Atrybut "lang" określa język strony internetowej -->
+<html lang="pl">
+
+    <head> <!-- Wewnątrz znacznika "head" definiujemy ustawienia naszej strony -->
+		<meta charset="utf-8" /> <!-- Ustawienie kodowania strony w celu odpowiedniego wyświetlania znaków -->
+        <title>Tytuł strony</title> <!--- Definicja tytułu widoczna w zakładce przeglądarki --->
+    </head>
+
+    <body> <!-- Wewnątrz znacznika "body" umieszczamy elementy, które mają być widoczne na stronie -->
+
+		<!-- Nagłówki - elementy blokowe (każdy wyświetla się domyślnie w nowej linii) --> 
+		<!-- "h1" największa czcionka, "h6" najmniejsza -->
+        <h1>Nagłówek h1</h1>
+		<h2>Nagłówek h2</h2>
+		<h3>Nagłówek h3</h3>
+		<h4>Nagłówek h4</h4>
+		<h5>Nagłówek h5</h5>
+		<h6>Nagłówek h6</h6>
+
+		<b>Tekst wyróżniony bez znaczenia semantycznego</b> <!--- Wyróżnienie tekstu --->
+		
+		<hr /> <!-- Pozioma linia oddzielająca treść -->
+ 
+		<!--- Akapity (paragrafy) - elementy blokowe --->
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+		industry. Lorem Ipsum has been the industry's standard dummy text</p>
+ 
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+		industry. Lorem Ipsum has been the industry's standard dummy text</p>
+ 
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+		industry. Lorem Ipsum has been the industry's standard dummy text</p>
+ 
+		<hr />
+		
+		<!--- "span" - element liniowy (domyślnie wyświetla się w tej samej linii, o ile jest dostępne miejsce) --->
+		<span>Span1</span>
+		<span>Span2</span>
+		<span>Span3</span>
+ 
+		<!--- "div" - podstawowy element blokowy, służy m. in. do grupowania kilku elementów lub ustawieniu docelowych elementów w nowej linii --->
+		<div>
+			<span>[Tekst w elemencie liniowym 1, w elemencie blokowym 1] </span>
+			<span>[Tekst w elemencie liniowym 2, w elemencie blokowym 1] </span>
+		</div>
+		<div>
+			<span>[Tekst w elemencie liniowym 3, w elemencie blokowym 2]</span>
+		</div>
+
+		<hr />
+
+		<!-- Inny sposób umieszczania elementów w nowej linii -->
+		<span>[Tekst w elemencie liniowym 1] </span>
+		<span>[Tekst w elemencie liniowym 2]</span>
+		<br /> <!--- Załamanie linii --->
+		<span>[Tekst w elemencie liniowym 3]</span>
+		<br />
+		<span>[Tekst w elemencie liniowym 4]</span>
+		
+
+		
+		
+		
+		<!-- Nieważne, ile wrzucę "enter'ów" - przeglądarka nie potraktuje ich jako nowych linii -->
+
+		<hr />
+ 
+		<!--- Linki (każdy umieszczony w elemencie blokowym, aby pojawiał się w nowej linii) --->
+		<div>
+			<a href="https://www.google.pl/index.html" target="_blank">Link do Google</a> <!-- "target" z wartością "_blank" otwiera link w nowej karcie-->
+		</div>
+		<div>Kliknij w link, aby przejść do dokumentacji MDN HTML 
+			<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">Link</a>
+		</div>
+		
+		<a href="#logo-edge">Przewiń stronę do Logo Edge</a> <!-- Link do innego elementu na naszej stronie -->
+
+		<hr />
+ 
+		<!--- Obrazy --->
+		<div>
+			<!-- Atrybuty: width - szerokość, height - wysokość, alt - tekst do wyświetlenia w przypadku błędnego linku, src - źródło -->
+			<img
+				width="100"
+				height="100"
+				alt="Logo Chrome'a"
+				src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Chrome_icon_%28February_2022%29.svg/480px-Google_Chrome_icon_%28February_2022%29.svg.png" 
+			/>
+		</div>
+		<img
+			alt="Logo Chrome'a"
+			src="niepoprawny link" 
+		/>
+
+		<!-- W aktrybucie "src" możemy umieszczać nazwy plików - w tym przypadku plik powinien być w tym samym katalogu co plik HTML -->
+		<img width="200" height="200" src="edge.png" id="logo-edge" alt="Logo Egde'a" /> 
+		
+		<hr />
+		
+		<!-- Lista numerowana --->
+		<ol>
+			<li>Pierwszy</li>
+			<li>Drugi</li>
+			<li>Trzeci</li>
+		</ol>
+		
+		<!-- Lista nienumerowana --->
+		<ul>
+			<li>Jabłka</li>
+			<li>Banany</li>
+			<li>Gruszki</li>
+		</ul>
+
+    </body>
+</html>
