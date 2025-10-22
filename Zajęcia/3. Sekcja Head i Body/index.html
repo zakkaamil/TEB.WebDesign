@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Kodowanie strony -->
+    <meta charset="UTF-8" />
+
+    <!-- Autor strony -->
+    <meta name="author" content="Jan Kowalski" />
+
+    <!-- Opis strony -->
+    <meta name="description" content="Opis mojej strony HTML" />
+
+    <!-- Słowa kluczowe opisujące tematykę strony -->
+    <meta name="keywords" content="education, school, hobbies" />
+
+    <!-- Tytuł strony -->
+    <title>HEAD i BODY - uzupełnienie</title>
+
+    <!-- Ikona w zakładce przeglądarki -->
+    <!-- W przypadku pliku PNG ustawiamy type jako "image/png" -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <!-- Dołączenie zewnętrznego arkusza stylów -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- Znaki specjalne - definiujemy je jako ciąg znaków &nazwa;  -->
+    <h4>Znaki specjalne</h4>
+
+    <p>Po tym tekście jest przerwa&nbsp;&nbsp;&nbsp;Tu się kończy przerwa</p>
+    <p>Jeden jest mniejsze od 2: 1 &lt; 2</p>
+    <p>Trzy jest większe od 2: 3 &gt; 2</p>
+    <p>Ampersand: &amp;</p>
+
+    <!-- Typy list uporządkowanych -->
+    <h4>Typy list uporządkowanych</h4>
+    <p>Oznaczenie literami</p>
+    <ol type="A">
+      <li>Europa</li>
+      <li>Azja</li>
+      <li>Afryka</li>
+    </ol>
+
+    <ol type="a">
+      <li>Europa</li>
+      <li>Azja</li>
+      <li>Afryka</li>
+    </ol>
+
+    <p>Oznaczenie cyframi rzymskimi</p>
+    <ol type="I">
+      <li>Europa</li>
+      <li>Azja</li>
+      <li>Afryka</li>
+    </ol>
+
+    <ol type="i">
+      <li>Europa</li>
+      <li>Azja</li>
+      <li>Afryka</li>
+    </ol>
+
+    <!-- Obrazy z podpowiedzią (ang. tooltip) -->
+    <h4>Obraz z podpowiedzią</h4>
+    <img
+      src="https://e7.pngegg.com/pngimages/480/192/png-clipart-firefox-mozilla-foundation-logo-firefox-logo-orange-computer-wallpaper-thumbnail.png"
+      alt="Logo Firefox"
+      title="Podpowiedź do obrazu"
+    />
+    <br />
+    <br />
+
+    <h4>Odsyłacze</h4>
+    <p>Link w formie obrazu</p>
+    <a href="https://www.firefox.com/">
+      <img
+        src="https://e7.pngegg.com/pngimages/480/192/png-clipart-firefox-mozilla-foundation-logo-firefox-logo-orange-computer-wallpaper-thumbnail.png"
+        alt="Logo Firefox"
+      />
+    </a>
+    <br />
+    <br />
+
+    <!-- Nawigacja po stronie -->
+    <p>Nawigacja do innych podstron</p>
+    <ul>
+      <li>
+        <a href="podstrona1.html">Podstrona 1</a>
+      </li>
+      <li>
+        <a href="podstrona2.html">Podstrona 2</a>
+      </li>
+    </ul>
+
+    <!-- Otwieranie okna e-mail z przekazanym odbiorcą, tematem i treścią -->
+    <p>Link do okna e-mail</p>
+    <a
+      href="mailto:nowhere@mozilla.org?subject=Temat wiadomości&body=Treść naszej wiadomości"
+      >Wyślij e-mail</a
+    >
+  </body>
+</html>

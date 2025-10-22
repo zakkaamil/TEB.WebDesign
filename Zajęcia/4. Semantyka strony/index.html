@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Semantyka strony</title>
+
+    <!-- CSS - definiowanie własnych styli, dodane na potrzeby prezentacji graficznej, na razie nie wymagam -->
+    <style>
+      main,
+      nav,
+      section,
+      article,
+      aside,
+      footer {
+        border: 1px solid black;
+      }
+      main {
+        display: flex;
+      }
+      aside {
+        min-width: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <header> - element semantyczny, obejmuje elementy wchodzące w skład nagłówka strony -->
+    <header>
+      <h1>Nagłówek mojej strony</h1>
+      <p>Treść nagłówka strony</p>
+    </header>
+
+    <!-- <nav> - element semantyczny, obejmuje elementy wchodzące w skład nawigacji strony -->
+    <nav>
+      <h3>Nawigacja:</h3>
+      <ul>
+        <li><a href="podstrona1.html">Podstrona 1</a></li>
+        <li><a href="podstrona2.html">Podstrona 2</a></li>
+      </ul>
+    </nav>
+
+    <!-- <main> - element semantyczny, obejmuje elementy wchodzące w skład głównej zawartości strony -->
+    <main style="display: flex">
+      <!-- <section> - element semantyczny, obejmuje elementy wchodzące w skład dowolnej sekcji na stronie -->
+      <!-- ma zadanie grupować dowolny zbiór elementów, podobnie jak znacznik <div> -->
+      <section>
+        <!-- <article> - element semantyczny, obejmuje elementy wchodzące w skład dowolnego artykułu na stronie -->
+        <article>
+          <p>Mój przykładowy post na stronie</p>
+          <h3>Tytuł mojego artykułu</h3>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </p>
+          <p>
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC,
+            making it over 2000 years old. Richard McClintock, a Latin professor
+            at Hampden-Sydney College in Virginia, looked up one of the more
+            obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+            going through the cites of the word in classical literature,
+            discovered the undoubtable source. Lorem Ipsum comes from sections
+            1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
+            of Good and Evil) by Cicero, written in 45 BC. This book is a
+            treatise on the theory of ethics, very popular during the
+            Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
+            amet..", comes from a line in section 1.10.32.
+          </p>
+          <!-- <strong> i <em> - znaczniki semantyczne, poza pogrubieniem/kursywą nadają treści szczególnego znaczenia -->
+          <p>
+            The container is <strong>usually</strong>, but isn't required to be
+          </p>
+          <p>
+            The <em>element</em> can be nested, with each level of nesting
+            indicating a greater degree of emphasi
+          </p>
+        </article>
+
+        <section>
+          <h3>Sekcja z obrazkami</h3>
+          <!-- <figure> - element semantyczny, obejmuje multimedia na stronie, np. obrazy -->
+          <figure>
+            <img
+              alt="Obraz 1"
+              src="https://media.tapeko.pl/wp-content/uploads/20240904060754/s40426p-600x900.jpg"
+            />
+            <!-- <figcaption> - element semantyczny, odpowiada za podpis do multimediów, najczęściej występuje wewnątrz <figure> -->
+            <figcaption>Podpis do obrazu 1</figcaption>
+          </figure>
+          <figure>
+            <img
+              alt="Obraz 2"
+              src="https://media.tapeko.pl/wp-content/uploads/20241122035743/s41733p-900x600.jpg"
+            />
+            <figcaption>Podpis do obrazu 2</figcaption>
+          </figure>
+        </section>
+      </section>
+
+      <!-- <aside> - element semantyczny, określa boczną część strony, np. można umieścić w nim spis treści do artykułu -->
+      <aside>
+        <h3>Treść strony, wyświetlana w bocznej części</h3>
+        <p>Spis treści</p>
+        <ol>
+          <li>Punkt 1</li>
+          <li>Punkt 2</li>
+          <li>Punkt 3</li>
+          <li>Punkt 4</li>
+          <li>Punkt 5</li>
+        </ol>
+      </aside>
+    </main>
+
+    <footer>
+      <h3>Stopka strony</h3>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+    </footer>
+  </body>
+</html>
