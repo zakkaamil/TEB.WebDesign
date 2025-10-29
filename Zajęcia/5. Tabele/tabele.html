@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tabele</title>
+        <style>
+            table, td, th {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Tabele</h1>
+
+        <h3>Podstawowa tabela:</h3>
+        <table>
+            <tr>
+                <td>Numer</td>
+                <td>Imię i nazwisko</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Nikodem Nowak</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jan Kowal</td>
+            </tr>
+        </table>
+
+        <h3>Rozszerzona tabela</h3>
+        <table>
+            <caption>Rejestr osób</caption>
+            <tr>
+                <th colspan="2">Imię i nazwisko</th>
+                <th>Wiek</th>
+                <th>Miejscowość</th>
+            </tr>
+            <tr>
+                <td>Jan</td>
+                <td>Kowalski</td>
+                <td>41</td>
+                <td>Rzeszów</td>
+            </tr>
+            <tr>
+                <td>Adam</td>
+                <td rowspan="3">Nowak</td>
+                <td>45</td>
+                <td rowspan="3">Krosno</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>38</td>
+            </tr>
+            <tr>
+                <td>Julia</td>
+                <td>12</td>
+            </tr>
+        </table>
+    </body>
+</html>
