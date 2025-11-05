@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Formularze</title>
+        <!-- Dodanie marginesów pomiędzy kontrolkami -->
+        <style>
+            div {
+                margin-bottom: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Zaaplikuj do naszej firmy</h3>
+        
+        <form>
+            <!-- Atrybuty "type" i "name" są wymagane -->
+            <div>
+                <label for="kontrolka-imie">Imię: </label>
+                <input type="text" name="imie" id="kontrolka-imie" />
+            </div>
+
+            <div>
+                <label for="kontrolka-nazwisko">Nazwisko: </label>
+                <input type="text" name="nazwisko" id="kontrolka-nazwisko" />
+            </div>
+
+            <div>
+                <label for="kontrolka-haslo">Hasło: </label>
+                <input type="password" name="haslo" id="kontrolka-haslo" />
+            </div>
+
+            <div>
+                <label>Powtórz hasło: 
+                    <input type="password" name="haslo2" />
+                </label>
+            </div>
+
+            <div>
+                <label for="kontrolka-data">Data urodzenia: </label>
+                <input type="date" name="data" id="kontrolka-data">
+            </div>
+
+            <div>
+                <label for="kontrolka-dosw">Lata doświadczenia: </label>
+                <input 
+                    type="number" 
+                    name="doswiadczenie" 
+                    id="kontrolka-dosw"
+                    value="10"
+                />
+            </div>
+            <div>
+                <p>Wykształcenie: </p>
+                <input 
+                    type="radio" 
+                    name="wyksztalcenie" 
+                    value="Podstawowe"
+                    id="kontrolka-wyksz-pod"
+                />
+                <label for="kontrolka-wyksz-pod">Podstawowe</label>
+
+                <input 
+                    type="radio" 
+                    name="wyksztalcenie" 
+                    value="Srednie"
+                    id="kontrolka-wyksz-sr"
+                />
+                <label for="kontrolka-wyksz-sr">Średnie</label>
+
+                <input 
+                    type="radio" 
+                    name="wyksztalcenie" 
+                    value="Wyzsze"
+                    id="kontrolka-wyksz-wyz"
+                />
+                <label for="kontrolka-wyksz-wyz">Wyższe</label>
+            </div>
+
+            <div>
+                <label for="kontrolka-zyciorys">Życiorys: </label>
+                <br />
+                <textarea 
+                    name="zyciorys" 
+                    id="kontrolka-zyciorys"
+                    cols="40"
+                    rows="5"></textarea>
+            </div>
+                <label for="kontrolka-stanowisko">Na jakie stanowisko aplikujesz?</label>
+                <select name="stanowisko" id="kontrolka-stanowisko">
+                    <option value="develeper">Developer</option>
+                    <option value="tester" selected>Tester</option>
+                    <option value="menadzer">Menadżer</option>
+                </select>
+            <div>
+
+            </div>
+
+            <div>
+                <input type="checkbox" name="rodo" id="kontrolka-rodo">
+                <label for="kontrolka-rodo">Zgadzam się na przetwarzanie danych osobowych</label>
+            </div>
+
+            <input type="reset" name="reset" />
+            <input type="submit" name="submit" value="Wyślij" />
+        </form>
+    </body>
+</html>
