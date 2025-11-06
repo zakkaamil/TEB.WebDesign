@@ -31,31 +31,40 @@
         <h3>Rozszerzona tabela</h3>
         <table>
             <caption>Rejestr osób</caption>
-            <tr>
-                <th colspan="2">Imię i nazwisko</th>
-                <th>Wiek</th>
-                <th>Miejscowość</th>
-            </tr>
-            <tr>
-                <td>Jan</td>
-                <td>Kowalski</td>
-                <td>41</td>
-                <td>Rzeszów</td>
-            </tr>
-            <tr>
-                <td>Adam</td>
-                <td rowspan="3">Nowak</td>
-                <td>45</td>
-                <td rowspan="3">Krosno</td>
-            </tr>
-            <tr>
-                <td>Maria</td>
-                <td>38</td>
-            </tr>
-            <tr>
-                <td>Julia</td>
-                <td>12</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th colspan="2">Imię i nazwisko</th>
+                    <th>Wiek</th>
+                    <th>Miejscowość</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jan</td>
+                    <td>Kowalski</td>
+                    <td>41</td>
+                    <td>Rzeszów</td>
+                </tr>
+                <tr>
+                    <td>Adam</td>
+                    <td rowspan="3">Nowak</td>
+                    <td>45</td>
+                    <td rowspan="3">Krosno</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>38</td>
+                </tr>
+                <tr>
+                    <td>Julia</td>
+                    <td>12</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Stopka tabeli</td>
+                </tr>
+            </tfoot>
         </table>
     </body>
 </html>
