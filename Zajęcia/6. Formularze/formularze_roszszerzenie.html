@@ -10,7 +10,144 @@
         </style>
     </head>
     <body>
-        <form action="mailto:xyz@gmail.com" method="post">
+        <!-- enctype="multipart/form-data" jest obecny ze względu na <input type="file" /> -->
+        <form action="mailto:xyz@gmail.com" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Nowe kontrolki</legend>
+                <div>
+                    <label for="emailowe">Pole e-mail</label>
+                    <input 
+                        type="email" 
+                        name="emailowe" 
+                        id="emailowe"
+                    />
+                </div>
+
+                <div>
+                    <label for="plik">Pole z dodawaniem pliku</label>
+                    <input 
+                        type="file" 
+                        name="plik" 
+                        id="plik"
+                    />
+                </div>
+
+
+
+                <div>
+                    <label for="kolor">Pole z wyborem koloru</label>
+                    <!-- value="#00FF00" oznacza kolor zielony (w formacie heksadecymalnym) -->
+                    <input 
+                        type="color" 
+                        name="kolor" 
+                        id="kolor"
+                        value="#00FF00"
+                    />
+                </div>
+
+                <div>
+                    <label for="jezyk">Pole wyboru zgrupowanych wartości</label>
+                    <select name="jezyk" id="jezyk">
+                        <optgroup label="Słowiańskie">
+                            <option value="pol">Polski</option>
+                            <option value="ukr">Ukraiński</option>
+                        </optgroup>
+                        <optgroup label="Germańskie">
+                            <option value="ang">Angielski</option>
+                            <option value="ger">Niemiecki</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="pole-lista">Pole wyboru z wyszukiwaniem</label>
+                    <input list="lista" id="pole-lista"/>
+                    <datalist id="lista">
+                        <option value="wartość1">Opcja 1</option>
+                        <option value="wartość2">Opcja 2</option>
+                        <option value="wartość3">Opcja 3</option>
+                    </datalist>
+                </div>
+            </fieldset>
+            
+
+            <fieldset>
+                <legend>Właściwości kontrolek</legend>
+                <!-- Właściwości zaprezentowane poniżej można używać także w innych kontrolkach -->
+                <div>
+                    <label for="tekstowe">Pole tekstowe z size i maxlenght</label>
+                    <input 
+                        type="text" 
+                        name="tekstowe" 
+                        id="tekstowe" 
+                        value="Dowolny tekst"
+                        size="50"
+                        maxlength="20"  
+                    />
+                </div>
+    
+                <div>
+                    <label for="tekstowe2">Pole tekstowe z placeholder</label>
+                    <input 
+                        type="text" 
+                        name="tekstowe2" 
+                        id="tekstowe2"
+                        placeholder="Podaj wartość..."
+                    />
+                </div>
+
+                <div>
+                    <label for="tekstowe3">Wyłączone pole tekstowe</label>
+                    <input 
+                        type="text" 
+                        name="tekstowe3" 
+                        id="tekstowe3"
+                        disabled
+                    />
+                </div>
+
+                <div>
+                    <label for="tekstowe4">Pole tekstowe do odczytu</label>
+                    <input 
+                        type="text" 
+                        name="tekstowe4" 
+                        id="tekstowe4"
+                        readonly
+                        value="Wartość"
+                    />
+                </div>
+
+                <div>
+                    <label for="tekstowe5">Pole tekstowe wymagane</label>
+                    <input 
+                        type="text" 
+                        name="tekstowe5" 
+                        id="tekstowe5"
+                        required
+                    />
+                </div>
+
+                <div>
+                    <label for="tekstowe6">Pole tekstowe z wymaganym formatem, np. kod pocztowy</label>
+                    <input 
+                        type="text" 
+                        name="tekstowe6" 
+                        id="tekstowe6"
+                        pattern="[0-9]{2}-[0-9]{3}"
+                    />
+                </div>
+
+                <div>
+                    <label for="tekstowe7">Pole tekstowe z automatycznym focus'em</label>
+                    <input 
+                        type="text" 
+                        name="tekstowe7" 
+                        id="tekstowe7"
+                        autofocus
+                    />
+                </div>
+            </fieldset>
+
             <button type="submit">
                 <img 
                     src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fa.allegroimg.com%2Foriginal%2F116c56%2Fe81af96744f9ba2e6da1db3049c3%2FPrzycisk-wylacznik-Bezpieczenstwa-Grzybek-awaryjny-STOP-w-obudowie-dlawik&f=1&nofb=1&ipt=8a629d66fb5310b0b56da8edd5902d7525475645ae480c6ae9bbfe39acbb5f84" 
@@ -19,6 +156,13 @@
                     width="60"
                     />
             </button>
+            <button type="reset">Wyczyść formularz</button>
+            <button type="button" id="btn">Przycisk, który może zrobić to, co będziesz chciał</button>
         </form>
+        <script>
+            var x = document
+                .getElementById("btn")
+                .addEventListener("onclick", console.log("Kliknięto"));
+        </script>
     </body>
 </html>
