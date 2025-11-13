@@ -157,12 +157,17 @@
                     />
             </button>
             <button type="reset">Wyczyść formularz</button>
-            <button type="button" id="btn">Przycisk, który może zrobić to, co będziesz chciał</button>
+            <button type="button" id="btn">Wyświetl alert 1</button>
+            <button type="button" onclick="pokazAlert()">Wyświetl alert 2</button>
         </form>
         <script>
-            var x = document
+            document
                 .getElementById("btn")
-                .addEventListener("onclick", console.log("Kliknięto"));
+                .addEventListener("click", () => pokazAlert());
+
+            function pokazAlert() {
+                alert("Kliknięto");
+            }
         </script>
     </body>
 </html>
