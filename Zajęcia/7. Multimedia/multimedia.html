@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Multimedia</title>
+    </head>
+    <body>
+        <h2>Strona prezentująca multimedia</h2>
+        <h4>Przekierowanie do multimediów linkami</h4>
+        <a href="assets/gg.mp3" target="_blank">Link do pliku muzycznego</a>
+        <br />
+        <a href="assets/stickman.mp4" target="_blank">Link do pliku wideo</a>
+
+        <h4>Umieszczanie multimediów bezpośrednio na stronie</h4>
+        <p>Plik muzyczny</p>
+        <audio src="assets/gg.mp3" controls></audio>
+        <br />
+        <p>Plik wideo</p>
+        <video 
+            src="assets/stickman.mp4" 
+            controls
+            width="400"
+        ></video>
+
+        <!-- W tym przypadku przeglądarka otworzyła plik MP4, a nie AVI -->
+        <p>Plik wideo z alternatywnymi typami wideo</p>
+        <video 
+            controls
+            width="400"
+        >
+            <source src="assets/stickman.avi" type="video/avi" />
+            <source src="assets/stickman.mp4" type="video/mp4" />
+        </video>
+
+        <h4>Zamieszczanie pliku PDF</h4>
+        <object data="assets/slowa.pdf" type="application/pdf2">
+            Nie można wyświetlić pliku
+            <a href="assets/slowa.pdf">Wyświetl</a>
+        </object>
+
+        <h4>Element canvas - definiowanie grafiki</h4>
+        <canvas id="linia"></canvas>
+
+        <script>
+            var canvasElement = document.getElementById("linia");
+            var canvasContext = canvasElement.getContext("2d");
+            canvasContext.moveTo(0, 0);
+            canvasContext.lineTo(600, 900);
+            canvasContext.strokeStyle = "red";
+            canvasContext.stroke();
+        </script>
+    </body>
+</html>
