@@ -4,7 +4,7 @@ Materiał został podzielony na 2 części.
 - Plik **podstawowe_kontrolki.html** - zawiera definicję formularza z bazowymi kontrolkami, które są najczęściej wykorzystywane podczas tworzenia stron.
 - Plik **formularze_rozszerzenie.html** - prezentuje dodatkowe kontrolki oraz pokazuje atrybuty, które możemy użyć w połączeniu z większością elementów na formularzach.
 
-### Lista z opisem znaczników HTML, które pojawiają się w pliku **tabele.html**
+### Lista z opisem elementów, które pojawiają się w plikach
 
 - **`<form>`** – otwiera formularz, pozwala użytkownikowi na wypełnienie i wysłanie danych. Typowe atrybuty:
   - `action` – adres serwera lub mail do wysłania danych.
