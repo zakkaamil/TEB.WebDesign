@@ -16,8 +16,8 @@
 - Zawartość bloku głównego:
   - Obraz (pobrany z internetu), prezentujący zeszyt o nazwie obraz.jpg z tekstem alternatywnym „notatki”
   - Lista punktowana (nieuporządkowana) zawierająca 6 elementów z zadaniami aktualny dany dzień. Każdy element listy zawiera w jednej linii:
-  - Nazwę zadania, np. "zjeść zupę"
-  - Przycisk o treści „Wykonane”
+    - Nazwę zadania, np. "zjeść zupę"
+    - Przycisk o treści „Wykonane”
   - Tabela:
     - składająca się z dwóch kolumn
     - pierwszy wiersz zawiera komórki nagłówkowe "Wykonane zadania" oraz "Godzina"
