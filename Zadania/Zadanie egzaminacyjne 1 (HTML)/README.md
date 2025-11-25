@@ -1,0 +1,32 @@
+## Wykonaj aplikację internetową zawierającą ranking gier komputerowych
+**Cechy witryny:**
+- Składa się ze strony o nazwie gry.html
+- Zapisana w języku HTML5
+- Zadeklarowany polski język zawartości witryny
+- Jawnie zastosowany właściwy standard kodowania polskich znaków
+- Tytuł strony widoczny na karcie przeglądarki: „Gry komputerowe”
+- Podział strony na bloki zrealizowany za pomocą semantycznych znaczników bloków języka HTML5 tak, aby po - uruchomieniu w przeglądarce układ bloków na stronie był podzielony kolejno na:
+    - blok nagłówkowy,
+    - blok sekcji pierwszej,
+    - blok sekcji drugiej,
+    - blok sekcji trzeciej,
+    - blok stopki.
+- Zawartość bloku nagłówkowego:
+    - Nagłówek pierwszego stopnia o treści „Ranking gier komputerowych”
+    - Zawartość sekcji pierwszej:
+    - Nagłówek trzeciego stopnia o treści: „Top 5 gier w tym miesiącu”
+    - Lista punktowana (nieuporządkowana) wypełniona przy pomocy 5 dowolnych nazw gier
+    - Nagłówek trzeciego stopnia o treści: „Nasz sklep”
+    - Odnośnik o treści „Tu kupisz gry” prowadzący do adresu http://sklep.gry.pl
+    - Nagłówek trzeciego stopnia o treści: „Stronę wykonał”
+- Zawartość sekcji drugiej: obraz z logiem dowolnej gry z tekstem alternatywnym oraz podpowiedzią
+- Zawartość sekcji trzeciej:
+    - Nagłówek trzeciego stopnia o treści: „Dodaj nową grę”
+    - Formularz, który zawiera cztery pola edycyjne podpisane etykietami:
+    - nazwa - jako pole tekstowe,
+    - opis - jako obszar tekstowy,
+    - cena - jako pole numeryczne,
+    - zdjęcie - jako pole do dołączenia pliku
+    - Na końcu formularza umieść przycisk "Dodaj", który zatwierdza formularz
+- Zawartość stopki:
+    - Paragraf z Twoim imieniem i nazwiskiem

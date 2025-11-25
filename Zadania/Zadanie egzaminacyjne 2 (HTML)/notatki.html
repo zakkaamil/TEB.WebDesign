@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Planer zadań</title>
+    </head>
+    <body>
+        <header>
+            <h2>Moje zadania</h2>
+        </header>
+
+        <nav>
+            <label for="zadanie">Dodaj zadanie:</label>
+            <input type="text" id="zadanie" placeholder="Dodaj zadanie...">
+            <button type="button">Dodaj</button>
+        </nav>
+
+        <main>
+            <img src="https://via.placeholder.com/150" alt="notatki" id="notebook-img">
+
+            <ul>
+                <li>
+                    Zjeść zupę <button>Wykonane</button>
+                </li>
+                <li>
+                    Uczyć się HTML <button>Wykonane</button>
+                </li>
+                <li>
+                    Napisać kod <button>Wykonane</button>
+                </li>
+                <li>
+                    Przeczytać książkę <button>Wykonane</button>
+                </li>
+                <li>
+                    Posprzątać pokój <button>Wykonane</button>
+                </li>
+                <li>
+                    Wykonać zadanie na uczelnię <button>Wykonane</button>
+                </li>
+            </ul>
+
+            <!-- Tabela z wykonanymi zadaniami -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Wykonane zadania</th>
+                        <th>Godzina</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Zjeść zupę</td>
+                        <td>12:30</td>
+                    </tr>
+                    <tr>
+                        <td>Uczyć się HTML</td>
+                        <td>14:00</td>
+                    </tr>
+                    <tr>
+                        <td>Napisać kod</td>
+                        <td>15:45</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <footer>
+            <label for="potwierdzenie">
+                <input type="checkbox" id="potwierdzenie">
+                Potwierdzam, że zadanie zostało wykonane samodzielnie bez użycia jakichkolwiek modeli językowych, tj. Chat GPT
+            </label>
+            <h3>Jan Kowalski</h3>
+        </footer>
+    </body>
+</html>
