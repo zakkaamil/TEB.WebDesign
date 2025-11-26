@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Definiowanie stylów wewnętrznych</title>
+        <!-- Wzór stylów wewnętrznych: selektor { atrybut: wartość; } -->
+        <style>
+            /* Selektory elementów HTML */
+            h3 {
+                color: grey;
+            }
+            body {
+                background-color: #eee;
+            }
+            /* Selektory klas */
+            .grupa-formularza {
+                margin-bottom: 8px;
+            }
+            /* Selektory identyfikatorów */
+            #przycisk {
+                width: 20%;
+                height: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Formularz zgłoszeniowy</h3>
+        <form>
+            <div class="grupa-formularza">
+                <label for="kontrolka-imie">Imię: </label>
+                <input type="text" name="imie" id="kontrolka-imie" />
+            </div>
+
+            <div class="grupa-formularza">
+                <label for="kontrolka-nazwisko">Nazwisko: </label>
+                <input type="text" name="nazwisko" id="kontrolka-nazwisko" />
+            </div>
+
+            <input type="submit" value="Wyślij" id="przycisk" />
+            <hr />
+
+            <div>
+                Tekst 1
+            </div>
+            <div>
+                Tekst 2
+            </div>
+        </form>
+    </body>
+</html>

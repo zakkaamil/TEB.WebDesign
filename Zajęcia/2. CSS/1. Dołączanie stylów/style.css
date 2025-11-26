@@ -1,0 +1,7 @@
+/* Wzór stylów wewnętrznych: selektor { atrybut: wartość; } */
+body {
+    background-color: beige;
+}
+.paragraf {
+    text-align: center;
+}
