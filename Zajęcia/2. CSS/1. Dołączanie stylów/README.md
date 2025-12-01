@@ -1,6 +1,6 @@
 # Dołączanie stylów do strony
 
-###  Podsumowanie sposobów dołączania stylów CSS, które zostały zaprezentowane w plikach
+##  Podsumowanie sposobów dołączania stylów CSS, które zostały zaprezentowane w plikach
 - **style-lokalne.html**
 - **style-wewnetrzne.html**
 - **style-zewnetrzne.html** oraz **style.css**
@@ -26,3 +26,18 @@
 -   Pozwala używać jednego arkusza stylów na wielu stronach
 - W pliku CSS stosowanie zgodnie ze wzorem `selektor { atrybut: wartość; }`
 - Aby dołączyć plik CSS do strony HTML, w sekcji `<head>` należy użyć zapisu `<link rel="stylesheet" href="nazwa_pliku.css" />`
+
+## Kaskadowość arkuszy stylów
+
+Przeglądarka określa ostateczny wygląd elementu na podstawie priorytetów.
+Style te są „nakładane warstwowo”, a o tym, który styl ma pierwszeństwo, decydują trzy główne zasady:
+- Specyficzność selektora – bardziej szczegółowe selektory mają wyższy priorytet. Kolejność priorytetów jest następująca:
+    - style lokalne
+    - style wewnętrzne
+    - style zewnętrzne
+
+    W przypadku, gdy nadamy styl dla znacznika HTML jednocześnie przy użyciu stylu lokalnego oraz zewnętrznego, przeglądarka zaaplikuje styl lokalny.
+- Kolejność występowania – jeśli dwie reguły mają tę samą specyficzność, wygrywa ta późniejsza.
+
+Wyjątkiem od reguły jest dodanie frazy `!important` przy definicji stylu. W takim przypadku uzyskujemy najwyższy priorytet. Aczkolwiek, jego szerokie stosowanie nie jest zalecane.
+
