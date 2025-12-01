@@ -30,7 +30,7 @@
 ## Kaskadowość arkuszy stylów
 
 Przeglądarka określa ostateczny wygląd elementu na podstawie priorytetów.
-Style te są „nakładane warstwowo”, a o tym, który styl ma pierwszeństwo, decydują trzy główne zasady:
+Style są „nakładane warstwowo”, a o tym, który styl ma pierwszeństwo, decydują zasady:
 - Specyficzność selektora – bardziej szczegółowe selektory mają wyższy priorytet. Kolejność priorytetów jest następująca:
     - style lokalne
     - style wewnętrzne
