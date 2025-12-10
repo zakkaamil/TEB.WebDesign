@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Model blokowy</title>
+        <style>
+            body {
+                margin: 0;
+            }
+            #block-1 {
+                width: 50%;
+                /* width: 200px; */
+                height: 100px;
+                
+                border-width: 3px;
+                border-style: solid;
+                /* border-style: dotted; - kropki */
+                /* border-style: dashed; - kreski */
+                /* border-style: none; - brak obramowania */
+                border-color: blueviolet;
+            }
+            #block-2 {
+                background-color: beige;
+
+                margin-top: 50px;
+                margin-bottom: 20px;
+                margin-left: 25px;
+                margin-right: 25px;
+
+                border: 1px solid black;
+
+                padding-top: 20px;
+                padding-bottom: 10px;
+                padding-left: 40px;
+                padding-right: 15px;
+
+                /* text-align: center; */
+            }
+            .red-border {
+                border: 3px solid red;
+            }
+            .default-height {
+                min-height: 20px;
+            }
+            #block-3 {
+                width: 150px;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+
+                /* padding-left: 100px;
+                padding-right: 100px;
+                padding-top: 20px;
+                padding-bottom: 20px; */
+
+                padding: 20px 100px; /* góra dół */
+                padding: 20px 100px 20px 100px; /* góra prawo dół lewo (zgodnie z zegarem) */
+                padding: 20px 100px 20px; /* góra lewo-prawo dół */
+            }
+            #block-4 {
+                width: 200px;
+                height: 200px;
+                text-align: center;
+                line-height: 200px;
+                /* padding: 100px 0; */
+
+                outline: 5px solid black;
+                margin-left: 10px;
+            }
+            #block-5 {
+                height: 100px;
+
+                width: 50%;
+                min-width: 300px;
+            }
+            #chrome-logo {
+                max-width: 50%;
+                min-height: 200px;
+            }
+            #map-container {
+                margin: 0 auto;
+                width: 80%;
+                overflow: auto;
+                height: 400px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Lekcja - model blokowy elementów</h1>
+        
+        <div id="block-1">Blok 1</div>
+        <div id="block-2">Blok 2 Lorem, ipsum dolor. Lorem, ips um d ol or.</div>
+        <div class="red-border"></div>
+        <br />
+        <div class="red-border default-height" id="block-3">
+            <span>Span wewnątrz wyśrodkowanego bloku</span>
+        </div>
+        <br />
+        <div class="red-border" id="block-4">
+            Tekst wyśrodkowany w bloku
+        </div>
+        <br>
+        <div class="red-border" id="block-5">
+            Blok ze zmienną szerokością
+        </div>
+        <div>
+            <img 
+                id="chrome-logo"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Chrome_icon_%28February_2022%29.svg/2048px-Google_Chrome_icon_%28February_2022%29.svg.png" 
+                alt="Logo Chrome" />
+        </div>
+        <div id="map-container">
+            <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/9/90/Europe_satellite_image_location_map.jpg" 
+                alt="Europe map" />
+        </div>
+    </body>
+</html>
