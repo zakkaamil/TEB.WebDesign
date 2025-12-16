@@ -73,6 +73,15 @@
                 width: 50%;
                 min-width: 300px;
             }
+            #left-block {
+                display: inline-block; /* blok w tym przypadku nie zajmie całej dostępnej szerokości */
+                width: 30%;
+            }
+            #right-block {
+                margin-left: 100px;
+                display: inline-block;
+                width: 30%;
+            }
             #chrome-logo {
                 max-width: 50%;
                 min-height: 200px;
@@ -103,6 +112,12 @@
         <div class="red-border" id="block-5">
             Blok ze zmienną szerokością
         </div>
+        <br>
+        <div>
+            <div class="red-border" id="left-block">Blok po lewej</div>
+            <div class="red-border" id="right-block">Blok po prawej, odsunięty o 100px</div>
+        </div>
+        <br>
         <div>
             <img 
                 id="chrome-logo"
