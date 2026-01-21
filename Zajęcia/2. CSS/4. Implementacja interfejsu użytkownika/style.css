@@ -32,17 +32,44 @@ section {
     color: #6c757d;
     font-size: 1.25rem;
     font-weight: 300;
-    margin: 0 0 16px;
+    margin: 0 0 24px;
 }
-.first-button {
+.button {
     text-decoration: none;
     color: white;
-    background-color: #007bff;
     padding: 6px 12px;
     border-radius: 4px;
-    margin: 8px 0;
-
+    display: inline-block;
+}
+.first-button {
+    background-color: #007bff;
 }
 .second-button {
-margin: 8px 0;
+    background-color: #6c757d;
+}
+main {
+    background-color: #f8f9fa;
+    text-align: center;
+    height: 500px;
+}
+footer {
+    padding: 48px 24px;
+}
+.footer-left-content {
+    display: inline-block;
+    color: #6c757d;
+}
+.footer-right-content {
+    float: right;
+}
+.footer-left-content-first-line {
+    margin-bottom: 4px;
+}
+.default-link {
+    color: #007bff;
+    text-decoration: none;
+}
+/* Dodanie stylu po najechaniu kursorem na element */
+.default-link:hover {
+    text-decoration: underline;
 }
