@@ -1,0 +1,24 @@
+.square-list {
+    list-style-type: square;
+}
+.decimal-list {
+    list-style-type: decimal;
+}
+.none-list {
+    list-style-type: none;
+}
+.external-image-list {
+    list-style-image: url("punktor.png");
+}
+.outside-position-list {
+    list-style-position: outside;
+}
+.inside-position-list {
+    list-style-position: inside;
+}
+.menu-item {
+    border: 1px solid black;
+    padding: 4px;
+    border-radius: 4px;
+    margin-right: 16px;
+}
