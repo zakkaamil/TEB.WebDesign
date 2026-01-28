@@ -30,3 +30,29 @@
 .list-menu-item {
     display: inline-block;
 }
+
+.my-table {
+    /* caption-side: top; - domyślnie */
+    caption-side: bottom;
+
+    /* border-collapse: separate; - domyślnie */
+    border-collapse: collapse;
+    
+    /* table-layout: auto; - domyślnie */
+    table-layout: fixed;
+ 
+    width: 200px;
+    border-spacing: 20px;
+}
+/* poniższy selektor aplikuje się do elementów: 
+- .my-table 
+- każdego elementu th wewnątrz elementu .my-table
+- każdego elementu td wewnątrz elementu .my-table */
+.my-table, .my-table th, .my-table td {
+    border: 1px solid black;
+}
+.flexible-text {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
