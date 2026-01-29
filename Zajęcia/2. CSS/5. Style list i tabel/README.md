@@ -107,7 +107,7 @@
 ---
 
 ## 4. **Tworzenie "zwijanego tekstu"**
-- W przypadku, gdy tekst nie mieści się w kontenerze, powszechną praktyką jest ustawienie kilku właściwości tak, aby wyświetliła się tylko część teksu zakończona znakami "...".
+- W przypadku, gdy tekst nie mieści się w kontenerze, powszechną praktyką jest ustawienie kilku właściwości tak, aby wyświetliła się tylko część tekstu zakończona znakami "...".
 
 ### **Zawijanie tekstu – `white-space`**
 - Określa, czy tekst może się zawijać.
