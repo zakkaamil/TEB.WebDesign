@@ -41,11 +41,13 @@ body {
 .positioned-container {
     border: 3px dashed white;
     padding: 40px 60px;
+    position: relative;
 }
 .absolute-square-in-container {
     border-color: orange;
     position: absolute;
     right: 5px;
+    top: 5px;
 }
 .fixed-square {
     border-color: yellow;
