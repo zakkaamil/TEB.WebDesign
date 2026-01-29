@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Pozycjonowanie</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h2>Pozycjonowanie elementów</h2>
+
+        <p>position: static; (niebieski) - domyślnie, left/right/top/bottom są ignorowane</p>
+        <div class="square"></div>
+        <div class="square static-square"></div>
+        <div class="square"></div>
+
+        <br />
+        <hr />
+
+        <p>
+            position: relative; (zielony) - przesunięcie względem pierwotnego położenia;
+            działa w połączeniu z left/right/top/bottom
+        </p>
+        <div class="square"></div>
+        <div class="square relative-square-1"></div>
+        <div class="square relative-square-2"></div>
+        <div class="square"></div>
+
+        <br />
+        <hr />
+
+        <p>
+            position: absolute; (fioletowy) - przesunięcie względem brzegów strony;
+            oryginalna przestrzeń zajmowana przez blok jest usuwana;
+            działa w połączeniu z left/right/top/bottom
+        </p>
+        <div class="square"></div>
+        <div class="square absolute-square-1"></div>
+        <div class="square absolute-square-2"></div>
+        <div class="square"></div>
+
+        <br />
+        <hr />
+
+        <p>
+            position: absolute; (pomarańczowy) - przesunięcie względem bloku, w którym się znajduje;
+            działa w połączeniu z left/right/top/bottom;
+            oryginalna przestrzeń zajmowana przez blok jest usuwana 
+        </p>
+        <div class="positioned-container">
+            <div class="square"></div>
+            <div class="square absolute-square-in-container"></div>
+            <div class="square"></div>
+        </div>
+
+        <br />
+        <hr />
+
+        <p>
+            position: fixed; (żółty) - przesunięcie względem bloku, w którym się znajduje, podąża za scrollem;
+            działa w połączeniu z left/right/top/bottom;
+            oryginalna przestrzeń zajmowana przez blok jest usuwana 
+        </p>
+        <div class="square"></div>
+        <div class="square fixed-square"></div>
+        <div class="square"></div>
+    </body>
+</html>
