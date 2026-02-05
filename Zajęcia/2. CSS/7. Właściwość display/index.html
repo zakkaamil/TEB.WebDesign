@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Właściwość display</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Właściwość display</h1>
+
+        <h2>Domyślne wartość - inline i block</h2>
+        <p>
+          Elementy liniowe, takie jak <b>span</b>, <b>a</b> mają domyślnie
+          <b>display: inline;</b> Wartość <b>inline</b> sprawia, że element zajmuje
+          tyle szerokości, co jego zawartość. Takie elementy wyświetlają się jeden obok
+          drugiego.
+        </p>
+        
+        <p>Przykłady:</p>
+        <span class="highlight">Element span</span>
+        <a class="highlight" href="https://google.com">Link</a>
+
+        <p>
+          Elementy blokowe, takie jak <b>div</b>, <b>section</b>,
+          <b>h1, h2...</b> mają domyślnie <b>display: block;</b> Wartość
+          <b>block</b> sprawia, że element zajmuje całą dostępną szerokość
+          (szerokość strony lub jego kontenera). Takie elementy wyświetlają się
+          jeden pod drugim.
+        </p>
+        <p>Przykłady:</p>
+        <div class="highlight">Element div</div>
+        <p class="highlight">Element akapit</p>
+
+        <h2>display: inline-block</h2>
+        <p>
+          Wartość <b>inline-block</b> działa tak samo jak inline, ale dodatkowo
+          element reaguje na właściwości <b>width</b> i <b>height</b>. Oprócz tego
+          lepiej współpracuje z <b>margin-top</b> i <b>margin-bottom</b>.
+        </p>
+        <p>Przykłady:</p>
+        <div class="highlight inline-block">Blok jako inline-block</div>
+        <div class="highlight inline-block">Blok jako inline-block</div>
+
+        <h2>display: flex</h2>
+        <p>
+          Wartość <b>flex</b> wprowadza całkowicie inny sposób interpretacji w
+          ustawianiu elementów. Następuje podział na kontener i jego dzieci.
+          Kontener z <b>display: flex;</b> zajmuje całe dostępne miejsce. Dzieci w
+          kontenerze zachowują się podobnie do elementów z
+          <b>display: inline-block;</b>. Dzięki różnym opcjom zyskujemy sporą
+          kontrolę nad elementami w kontenerze
+        </p>
+
+        <p>Przykłady:</p>
+        <div class="flex-container">
+            <div>Flex-element </div>
+            <div>Flex-element </div>
+            <div>Flex-element </div>
+            <div>Flex-element </div>
+        </div>
+
+        <div class="flex-container flex-horizontal-center">
+            <div>Flex-element wyśrodkowany horyzontalnie</div>
+        </div>
+
+        <div class="flex-container flex-custom">
+            <div>Flex-element</div>
+            <div>Flex-element</div>
+        </div>
+
+        <div class="flex-container flex-gap">
+            <div>Flex-element</div>
+            <div>Flex-element</div>
+            <div>Flex-element</div>
+            <div>Flex-element</div>
+            <div>Flex-element</div>
+            <div>Flex-element</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+.highlight {
+    color: darkred;
+}
+.inline-block {
+    display: inline-block;
+    border: 1px solid black;
+    width: 20%;
+    height: 30px;
+}
+.flex-container {
+    display: flex;
+    border: 1px solid black;
+    height: 100px;
+}
+.flex-horizontal-center {
+    justify-content: center;
+}
+.flex-custom {
+    align-items: center;
+    justify-content: space-between;
+}
+.flex-gap {
+    gap: 30px;
+}
