@@ -22,3 +22,13 @@
 .flex-gap {
     gap: 30px;
 }
+.grid-container {
+    display: grid;
+    border: 1px solid black;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 67px 2rem;
+}
+.grid-item {
+    padding: 4px;
+    border: 1px solid darkred;
+}
