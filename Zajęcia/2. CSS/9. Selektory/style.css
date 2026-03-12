@@ -1,0 +1,82 @@
+/* Selektory elementów */
+body {
+    background-color: black;
+    color: white;
+}
+p {
+    color: lightgrey;
+}
+/* Selektory identyfikatorów */
+#my-button {
+    border-radius: 8px;
+    padding: 12px;
+}
+
+/* Selektory klas */
+.my-box {
+    border: 1px solid white;
+    min-width: 50px;
+    padding: 8px;
+    display: inline-block;
+}
+.special-text {
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Selektory dziecka i potomka */
+.parent {
+    border: 1px solid white;
+}
+.parent p {
+    color:lightcoral;
+}
+.parent > p {
+    color: lightgreen;
+}
+.my-table, .my-table td, .my-table th {
+    border: 1px solid lightblue;
+}
+.my-table {
+    border-collapse: collapse;
+}
+
+/* Selektory atrybutu */
+input[type="text"] {
+    background-color: lightgray;
+}
+/* Pseudoklasy */
+.my-link:link {
+    color: white;
+}
+.my-link:active {
+    color: lightpink;
+}
+.my-link:visited {
+    color:aquamarine;
+}
+.my-link:hover {
+    cursor: grab;
+}
+.my-duck:hover {
+    transform: scale(1.1);
+}
+.my-textarea:focus {
+    background-color: bisque;
+}
+/* Pseudoelementy */
+.my-post::first-letter {
+    font-size: 36px;
+}
+.my-post::first-line {
+    font-style: italic;
+}
+.asterisk {
+    color: red;
+}
+label.required::after {
+    content: " *";
+    color: red;
+}
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Selektory</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Selektory</h1>
+
+        <h2>Selektor elementu</h2>
+        <p>Paragraf z szarym tekstem</p>
+
+        <h2>Selektor identyfikatora</h2>
+        <button id="my-button">Przycisk z identyfikatorem</button>
+
+        <h2>Selektor klasy</h2>
+        <div class="my-box">Blok z moją klasą</div>
+        <div class="my-box special-text">Blok z moją klasą i specjalnym tekstem</div>
+
+        <h2>Selektor dziecka i potomka</h2>
+        <p>Paragraf poza divem parent</p>
+        <div class="parent">
+            <p>Paragraf bezpośrednio wewnątrz diva parent</p>
+            <p>Kolejny paragraf bezpośrednio wewnątrz diva parent</p>
+            <div>
+                <p>Paragraf niebezpośrednio wewnątrz diva parent</p>
+            </div>
+        </div>
+
+        <p>Tabela</p>
+        <table class="my-table">
+            <tr>
+                <th>Nagłówek 1</th>
+                <th>Nagłówek 2</th>
+            </tr>
+            <tr>
+                <td>Komórka 1</td>
+                <td>Komórka 2</td>
+            </tr>
+            <tr>
+                <td>Komórka 3</td>
+                <td>Komórka 4</td>
+            </tr>
+        </table>
+
+        <h2>Selektor atrybutu</h2>
+        <form>
+            <label for="input-1">Kontrolka tekstowa 1</label>
+            <input type="text" name="input-1" id="input-1" />
+            <br />
+
+            <label for="input-2">Kontrolka tekstowa 2</label>
+            <input type="text" name="input-2" id="input-2" />
+            <br />
+
+            <label for="input-3">Kontrolka liczbowa 1</label>
+            <input type="number" name="input-3" id="input-3" />
+            <br />
+
+            <label for="input-4">Kontrolka liczbowa 2</label>
+            <input type="number" name="input-4" id="input-4" />
+            <br />
+
+            <input type="submit" />
+        </form>
+
+        <h2>Pseudoselektory</h2>
+        <div>
+            <a href="https://google.com" target="_blank">Link z domyślnymi stylami</a>
+            <a class="my-link" href="https://google.com" target="_blank">Link z własnymi stylami</a>
+        </div>
+
+        <img class="my-duck" src="https://png.pngtree.com/png-vector/20191121/ourmid/pngtree-blue-bird-vector-or-color-illustration-png-image_2013004.jpg" alt="duck">
+
+        <textarea class="my-textarea" name="textarea"></textarea>
+
+        <h2>Pseudoelementy</h2>
+        <p>Stylowanie pierwszej litery i linii teksty</p>
+        <article class="my-post">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Maiores repellat sint, aperiam doloremque nemo est et architecto 
+            perspiciatis nihil quisquam?
+        </article>
+
+        <p>Dodanie znaku gwiazdki na końcu etykiety kontrolki bez pseudoklasy</p>
+        <label for="input-5">
+            Wymagana kontrolka <span class="asterisk">*</span>
+        </label>
+        <input type="number" name="input-5" id="input-5">
+        <br />
+        <p>Dodanie znaku gwiazdki na końcu etykiety kontrolki z pseudoklasą</p>
+        <label class="required" for="input-6">
+            Wymagana kontrolka
+        </label>
+        <input type="number" name="input-6" id="input-6">
+    </body>
+</html>
