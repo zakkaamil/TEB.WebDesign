@@ -5,7 +5,6 @@ W zadaniu wykorzystasz:
 - `max-width`,
 - `inline-block`,
 - media queries,
-- klasy z zewnętrznej biblioteki (Bootstrap),
 - ukrywanie elementów w zależności od szerokości ekranu.
 ---
 ## 1. Pasek informacyjny
