@@ -5,7 +5,7 @@
 ![Układ](uklad.png)
 
 Cechy witryny:
-- Składa się ze strony o nazwie paznokcie.html
+- Składa się ze stron o nazwach paznokcie.html, ksztalt.html, wzor.html
 - Zapisana w języku HTML5
 - Zadeklarowany polski język zawartości witryny
 - Jawnie zastosowany właściwy standard kodowania polskich znaków
@@ -21,7 +21,7 @@ Cechy witryny:
     - Przycisk o treści „Wzór” 
     - Kliknięcie w każdy z przycisków ma przenosić na odpowiednią podstronę HTML
 - Zawartość bloku sekcja 1:
-    - Zawartość tej sekcji jest umieszczona w pliku index.html 
+    - Zawartość tej sekcji jest umieszczona w pliku paznokcie.html 
     - Nagłówek drugiego stopnia o treści „Kolor” 
     - Dowolny obraz z tekstem alternatywnym „Kolory paznokci” 
     - Poniżej pole edycyjne pozwalające wybrać kolor, wartość początkowa pola: #FF0000
