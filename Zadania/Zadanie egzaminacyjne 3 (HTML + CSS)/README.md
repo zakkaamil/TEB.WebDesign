@@ -26,7 +26,7 @@ Cechy witryny:
 - Zawartość bloku sekcji prawej:
     - Nagłówek trzeciego stopnia o treści „111 222 444”
     - Obraz a3.png z tekstem alternatywnym „Samochód”
-    - Zawartość stopki: paragraf o treści: „Stronę wykonał: ”, dalej wstawione Twoje imię i nazwisko.
+- Zawartość stopki: paragraf o treści: „Stronę wykonał: ”, dalej wstawione Twoje imię i nazwisko.
 
 
 Styl CSS witryny internetowej
