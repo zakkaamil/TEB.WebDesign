@@ -1,0 +1,76 @@
+* {
+    font-family: Garamond, serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    /* display: flex; */
+}
+
+header, footer {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    letter-spacing: 3px;
+}
+
+footer p {
+    font-weight: bold;
+}
+
+nav, section {
+    height: 500px;
+    display: inline-block;
+}
+
+nav {
+    background-color: dodgerblue;
+    width: 30%;
+    padding: 0 10px;
+}
+
+section {
+    background-color: skyblue;
+    width: 70%;
+    text-align: center;
+    overflow: auto;
+}
+
+h3 {
+    text-align: center;
+}
+
+h3::first-letter {
+    font-size: 200%;
+}
+
+p {
+    font-size: 150%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.shape {
+    display: block;
+    border: 3px solid dimgray;
+    border-radius: 10px;
+    margin: 5px auto;
+    cursor: pointer;
+}
+
+.shape:hover {
+    transform: scale(1.2);
+}
